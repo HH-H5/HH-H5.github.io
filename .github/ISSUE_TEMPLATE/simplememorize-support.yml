@@ -1,0 +1,59 @@
+name: SimpleMemorize サポート
+description: SimpleMemorizeの不具合や使い方について報告する
+title: "[SimpleMemorize Support] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        お問い合わせありがとうございます。GitHub Issueは公開されます。氏名、メールアドレス、登録した問題・解答などの個人情報は記載しないでください。
+  - type: dropdown
+    id: category
+    attributes:
+      label: お問い合わせの種類
+      options:
+        - アプリが正常に動かない
+        - 表示や操作について
+        - 広告について
+        - データやプライバシーについて
+        - その他
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 内容
+      description: 起きたこと、直前に行った操作、期待していた結果を記載してください。
+      placeholder: 例：問題を登録したあと、ホーム画面で○○と表示されました。
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: アプリのバージョン
+      placeholder: 例：1.0 (1)
+  - type: input
+    id: ios-version
+    attributes:
+      label: iOSのバージョン
+      placeholder: 例：iOS 26.0
+  - type: input
+    id: device
+    attributes:
+      label: 端末
+      placeholder: 例：iPhone 15
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 再現手順
+      description: 同じ問題を再現できる場合は、番号付きで手順を記載してください。
+      placeholder: |
+        1. アプリを開く
+        2. ○○を押す
+        3. ○○と表示される
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 公開情報の確認
+      options:
+        - label: この投稿に氏名、メールアドレス、登録した問題・解答などの個人情報を含めていません。
+          required: true

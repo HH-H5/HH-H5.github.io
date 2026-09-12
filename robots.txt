@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hh-h5.github.io/SimpleMemorize/sitemap.xml
